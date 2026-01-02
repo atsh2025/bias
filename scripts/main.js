@@ -90,7 +90,7 @@ function convertCSVArrayToTraineeData(csvArrays) {
     trainee.top12 = traineeArray[6] === 't'; // sets trainee to top 12 if 't' appears in 6th column
     trainee.id = parseInt(traineeArray[7]) - 1; // trainee id is the original ordering of the trainees in the first csv
     trainee.image =
-      trainee.name_romanized.replace(" ", "").replace("-", "") + ".jpg";
+      trainee.name_romanized.replace(" ", "").replace("-", "") + ".JPG";
     return trainee;
   });
   filteredTrainees = trainees;
@@ -421,7 +421,7 @@ var trainees = [];
 var filteredTrainees = [];
 // holds the ordered list of rankings that the user selects
 var ranking = newRanking();
-const rowNums = [1, 2, 4, 5];
+const rowNums = [1, 2, 3, 4];
 //window.addEventListener("load", function () {
   populateRanking();
   readFromCSV("./trainee_info.csv");
