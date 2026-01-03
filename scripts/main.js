@@ -261,7 +261,7 @@ function populateRankingEntry(trainee, currRank) {
       </div>
       <div class="ranking__entry-icon-badge bg-${trainee.grade.toLowerCase()}">${currRank}</div>
       ${
-        top12 ? '<div class="ranking__entry-icon-crown"></div>' : ''
+        top12 ? '<img class="ranking__entry-icon-crown" src="assets/iconn.png" />' : ''
       }
     </div>
     <div class="ranking__row-text">
